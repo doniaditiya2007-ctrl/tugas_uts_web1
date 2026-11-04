@@ -205,3 +205,8 @@ Project ini menggunakan penyimpanan browser (Local Storage dan/atau Session Stor
 
 ## 14. Kesimpulan
 Website Toko Buku Online merupakan project sederhana untuk menerapkan HTML, CSS, dan JavaScript dalam pembuatan website interaktif. Fitur yang tersedia mencakup login, dashboard, stok buku, checkout, tracking, laporan, dan riwayat transaksi. Project ini masih dapat dikembangkan dengan penambahan backend dan database agar pengelolaan data lebih lengkap.
+
+## 15. Video Demo
+Video demonstrasi website Toko Buku Online dapat ditonton melalui tautan berikut:
+
+[**Tonton Video Demo Toko Buku Online di YouTube**](https://youtu.be/a-fUdeBxkiE)
