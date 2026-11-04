@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pemesanan Buku | Toko Buku Online</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="topbar"><div><div class="brand">📚 Toko Buku Online</div><p>Form pemesanan dan pembayaran</p></div><nav class="top-links"><a href="dashboard.html">Dashboard</a><a href="stok.html">Katalog</a></nav></header>
+<main class="container">
+  <section class="panel"><h1>Checkout / Pemesanan Buku</h1><p class="muted">Lengkapi informasi pemesan, pilih buku, dan tentukan metode pembayaran.</p>
+    <form id="formCheckout">
+      <h2>Informasi Pemesan</h2>
+      <div class="form-grid">
+        <div><label for="namaPemesan">Nama Pemesan</label><input id="namaPemesan" required></div>
+        <div><label for="emailPemesan">Email</label><input type="email" id="emailPemesan" required></div>
+        <div style="grid-column:1/-1"><label for="alamat">Alamat Pengiriman</label><textarea id="alamat" rows="3" required></textarea></div>
+      </div>
+      <h2 style="margin-top:24px">Informasi Buku</h2>
+      <div class="form-grid">
+        <div><label for="pilihBuku">Pilih Buku</label><select id="pilihBuku" required><option value="">-- Pilih buku --</option></select></div>
+        <div><label for="jumlah">Jumlah</label><input type="number" id="jumlah" min="1" value="1" required></div>
+      </div>
+      <div class="notice"><strong>Total Pembayaran: <span id="total">Rp 0</span></strong></div>
+      <h2>Informasi Pembayaran</h2>
+      <label for="pembayaran">Metode Pembayaran</label><select id="pembayaran" required><option value="">-- Pilih metode --</option><option>Transfer Bank</option><option>COD</option><option>E-Wallet</option></select>
+      <div class="form-actions"><button type="submit">Pesan Sekarang</button><a class="btn btn-light" href="dashboard.html">Batal</a></div>
+    </form>
+    <div id="hasilPesanan" class="notice" hidden></div>
+  </section>
+</main><footer class="footer">Simulasi front-end, bukan transaksi pembayaran sungguhan.</footer>
+<script src="js/data.js"></script><script src="js/app.js"></script></body></html>

@@ -1,0 +1,28 @@
+/* CSS EKSTERNAL: digunakan bersama oleh seluruh halaman */
+:root{--navy:#183b67;--blue:#28639b;--sky:#eaf2fb;--ink:#243247;--muted:#64748b;--line:#dbe3ee;--white:#fff;--bg:#f4f7fb;--green:#16845b;--red:#c0392b;--shadow:0 8px 24px rgba(22,49,82,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+.topbar{background:var(--navy);color:#fff;padding:20px max(22px,calc((100% - 1180px)/2));display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{font-size:22px;font-weight:700;letter-spacing:.2px}.topbar p{margin:3px 0 0;color:#dce8f6;font-size:14px}
+.top-links{display:flex;gap:10px;flex-wrap:wrap}.top-links a{color:#fff;padding:8px 12px;border:1px solid #7894b5;border-radius:8px}
+.container{width:min(1180px,calc(100% - 36px));margin:28px auto}
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:var(--shadow);margin-bottom:22px}
+h1,h2,h3{line-height:1.25;color:var(--navy)}h1{font-size:28px;margin:0 0 8px}h2{font-size:21px;margin:0 0 14px}h3{font-size:17px;margin:0 0 10px}
+.muted{color:var(--muted)}.small{font-size:13px}.btn,button{display:inline-block;border:0;border-radius:8px;background:var(--blue);color:white;padding:11px 17px;font-size:14px;font-weight:600;cursor:pointer}
+.btn:hover,button:hover{background:var(--navy);text-decoration:none}.btn-light{background:#e8f0fa;color:var(--navy)}.btn-danger{background:#b83a36}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid #b8d4f3;border-color:var(--blue)}
+label{display:block;font-size:14px;font-weight:600;margin:10px 0 5px}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.form-actions{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:720px;margin-top:12px}th,td{padding:12px 13px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}th{background:var(--navy);color:white;font-size:13px}tbody tr:nth-child(even){background:#f7f9fc}tbody tr:hover{background:#edf4fc}
+.book-cover{width:58px;height:82px;object-fit:cover;border-radius:5px;box-shadow:0 2px 6px #0002}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.menu-card{display:block;background:#fff;border:1px solid var(--line);border-radius:13px;padding:20px;box-shadow:var(--shadow);transition:.2s}.menu-card:hover{transform:translateY(-3px);text-decoration:none;border-color:#9ab9dc}.menu-icon{font-size:26px}.menu-card h3{margin:8px 0}.stat{font-size:27px;font-weight:700;color:var(--navy)}
+.login-wrap{min-height:100vh;display:grid;place-items:center;padding:24px}.login-card{width:min(440px,100%);background:white;padding:32px;border-radius:16px;box-shadow:var(--shadow);border:1px solid var(--line)}.login-card h1{text-align:center}.login-card .subtitle{text-align:center;color:var(--muted);margin-bottom:22px}
+.link-row{display:flex;justify-content:space-between;gap:12px;margin-top:16px;flex-wrap:wrap}.text-button{background:none;color:var(--blue);padding:0;font-weight:600}.text-button:hover{background:none;text-decoration:underline}
+.modal{border:0;border-radius:14px;padding:24px;width:min(430px,calc(100% - 30px));box-shadow:0 20px 60px #0004}.modal::backdrop{background:#0f1f33a6}.modal h2{margin-bottom:8px}.close-row{display:flex;justify-content:flex-end;margin-top:14px}
+.badge{display:inline-block;padding:5px 10px;border-radius:999px;background:#e7f5ee;color:#146c48;font-size:12px;font-weight:700}.badge-blue{background:#e7f0fb;color:#245a91}
+.notice{padding:12px 14px;border-radius:8px;background:#eef5ff;border-left:4px solid var(--blue);margin:12px 0}.error{color:var(--red)}.success{color:var(--green)}
+.timeline{border-left:3px solid #c5d8ed;margin:16px 0 0 8px;padding-left:20px}.timeline li{margin:0 0 16px;padding-left:4px}.timeline strong{color:var(--navy)}
+.progress{height:10px;background:#e5edf6;border-radius:99px;overflow:hidden;margin:12px 0}.progress span{display:block;height:100%;background:#23966a;border-radius:99px}
+.footer{text-align:center;color:var(--muted);font-size:12px;padding:24px}
+@media(max-width:650px){.form-grid{grid-template-columns:1fr}.panel{padding:17px}.container{width:calc(100% - 22px);margin:16px auto}.topbar{padding:17px}.link-row{flex-direction:column}.login-card{padding:24px}}

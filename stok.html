@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Katalog Buku | Toko Buku Online</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="topbar"><div><div class="brand">📚 Toko Buku Online</div><p>Informasi stok dan katalog buku</p></div><nav class="top-links"><a href="dashboard.html">Dashboard</a><a href="checkout.html">Pemesanan</a></nav></header>
+<main class="container">
+  <section class="panel"><h1>Daftar Stok Buku</h1><p class="muted">Data ditampilkan secara dinamis dari variabel <code>dataKatalogBuku</code> pada data.js.</p>
+    <div class="table-wrap"><table><thead><tr><th>Gambar</th><th>Kode</th><th>Nama Buku</th><th>Jenis</th><th>Edisi</th><th>Stok</th><th>Harga</th></tr></thead><tbody id="tabelBuku"><tr><td colspan="7">Memuat data...</td></tr></tbody></table></div>
+  </section>
+  <section class="panel"><h2>Tambah Buku Baru</h2><form id="formBuku" class="form-grid">
+    <div><label for="kode">Kode Barang</label><input id="kode" required></div>
+    <div><label for="nama">Nama Buku</label><input id="nama" required></div>
+    <div><label for="jenis">Jenis Barang</label><input id="jenis" value="Buku Ajar" required></div>
+    <div><label for="edisi">Edisi</label><input id="edisi" required></div>
+    <div><label for="stok">Jumlah Stok</label><input id="stok" type="number" min="0" required></div>
+    <div><label for="harga">Harga (contoh: Rp 100.000)</label><input id="harga" placeholder="Rp 100.000" required></div>
+    <div class="form-actions" style="grid-column:1/-1"><button type="submit">+ Tambah Buku</button><button type="reset" class="btn-light">Kosongkan</button></div>
+  </form><p class="small muted">Buku tambahan disimpan pada localStorage browser agar tetap tampil setelah halaman dimuat ulang.</p></section>
+</main><footer class="footer">UTS Pemrograman Web 1</footer>
+<script src="js/data.js"></script><script src="js/app.js"></script></body></html>

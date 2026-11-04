@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dashboard | Toko Buku Online</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="topbar"><div><div class="brand">📚 Toko Buku Online</div><p>Dashboard pengelolaan toko buku</p></div><div class="top-links"><a href="stok.html">Katalog</a><a href="#" id="btnLogout">Logout</a></div></header>
+<main class="container">
+  <section class="panel"><h1 id="greeting">Selamat datang</h1><p class="muted" id="namaPengguna">Ringkasan menu aplikasi toko buku.</p></section>
+  <section class="cards">
+    <a class="menu-card" href="stok.html"><div class="menu-icon">📚</div><h3>Informasi Stok/Katalog</h3><p class="muted">Melihat daftar buku, harga, dan jumlah stok serta menambah buku.</p></a>
+    <a class="menu-card" href="tracking.html"><div class="menu-icon">🚚</div><h3>Tracking Pengiriman</h3><p class="muted">Mencari status pengiriman menggunakan nomor Delivery Order.</p></a>
+    <a class="menu-card" href="laporan.html"><div class="menu-icon">📊</div><h3>Laporan Pemesanan</h3><p class="muted">Melihat ringkasan dan daftar pesanan yang tercatat.</p></a>
+    <a class="menu-card" href="history.html"><div class="menu-icon">🧾</div><h3>History Transaksi</h3><p class="muted">Melihat riwayat transaksi pemesanan buku.</p></a>
+    <a class="menu-card" href="checkout.html"><div class="menu-icon">🛒</div><h3>Buat Pemesanan</h3><p class="muted">Mengisi data pemesan, memilih buku, dan simulasi pembayaran.</p></a>
+  </section>
+  <section class="panel" style="margin-top:22px"><h2>Informasi Aplikasi</h2><p>Aplikasi ini dibuat menggunakan HTML, CSS, dan JavaScript. Data awal berasal dari file <code>data.js</code>; pesanan dan perubahan stok simulasi disimpan pada localStorage browser.</p></section>
+</main><footer class="footer">UTS Pemrograman Web 1</footer>
+<script src="js/data.js"></script><script src="js/app.js"></script></body></html>
